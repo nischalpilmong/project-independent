@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans Regular", Arial, Helvetica, sans-serif;
+}
+
+
+.main-body{
+    width: 100%;
+    height: auto;
+    background-color: rgb(33, 49, 77);
+}
+
+.freenet-zahlen{
+    height: 230px;
+    background-color: rgb(227, 232, 243);
+    clip-path: polygon(0 0, 100% 0, 100% 180px, 0 100%);
+}
+
+.arbeiter-zahlen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ebitda-price,
+.free-cashflow{
+    display: none;
+}
+
+.umsatz-price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.abonnent-price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.zahlenContent .zahlen-name{
+    font-size: 16px;
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-family: "Open Sans Regular", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    color: rgb(33, 49, 77);    
+}
+
+.zahlenContent .zahlen-nummer{
+    font-family: "Open Sans Regular", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: rgb(33, 49, 77);
+    line-height: 40px;
+    text-align: center;
+}
+
+.zahlenContent span{
+    display: block;
+    text-align: center;
+}
+
+.arbeiter-zahlen{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.zahlenBoxContent{
+  text-transform: uppercase;
+  color: #fff;
+  font-family: "Open Sans Regular", Arial, Helvetica, sans-serif;
+}
+
+.cell-1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.zahlenBoxContent .zahlenBoxName{
+    text-align: center;
+    font-size: 26px;
+}
+
+.zahlenBoxContent .zahlenBoxNummer{
+    text-align: center;
+    font-size: 55px;
+    font-weight: 750;
+    margin-top: 0.7rem;
+}
+.zahlenBoxContent span{
+    text-align: center;
+}
+.cell-2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.ergebnisse{
+    display: flex;
+    flex-direction: column;
+}
+
+.ergebnisse .zahlenBoxNummerStand{
+    color: #fff;
+    font-size: 16px;
+    margin: 3rem 1rem 0 1rem;
+    display: inline-block;
+}
+.ergebnisse .zahlenBoxNummerStand span{
+    line-height: 2rem;
+    display: block;
+}
+
+.ergebnisse .ergebnisse-btn{
+    background-color: rgb(132, 188, 52);
+    margin: 15px auto;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 16px;
+    padding: 14.4px 24px 12.8px 24px;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 700px){
+   .freenet-zahlen{
+       display: flex;
+       justify-content: space-evenly;
+   }
+   .arbeiter-zahlen{
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+   }
+   .cell-2{
+       margin: 0;
+   }
+   .zahlenBoxContent .zahlenBoxNummer{
+       margin-top: 0;
+   }
+
+   .arbeiter-zahlen{
+       margin-top: 2rem;
+   }
+   .ergebnisse{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2rem;
+    align-items: center;
+    margin-top: 5rem;
+    margin-left: 1rem;
+    }
+    .ergebnisse .zahlenBoxNummerStand{
+        margin: 0 15px;
+    }
+   .ergebnisse .zahlenBoxNummerStand span{
+        display: inline;
+        font-size: 14px;
+   }
+    .ergebnisse .zahlenBoxNummerStand .ergebnisse-btn{
+        font-size: 14px;
+        text-align: center;
+        padding: 5px;
+    }
+}
+
+
+
+@media screen and (min-width: 992px){
+    .ebitda-price,
+    .free-cashflow{
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ergebnisse {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;      
+    }
+    .ergebnisse .zahlenBoxNummerStand{
+      margin-left: 20rem;
+    }
+
+    .ergebnisse .ergebnisse-btn{
+        font-size: 13px; 
+    }
+}
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.grid-container{
+    background-color: rgb(33,49,77);
+    height: 60vh;
+    width: 1100px;
+    max-width: 100%;
+    margin: 10px auto;
+}
+
+.freenet-zahlen{
+    background-color: rgb(227, 232, 243);
+    height: 40vh;
+    clip-path: polygon(0 0, 100% 0, 100% 180px, 0 75%);
+}
+
+.price-content-1{
+    display: flex;
+    width: 100%;
+    height: 40vh;
+}
+
+.umsatz-price, .abonnent-price, .ebitda-price, .free-cashflow{
+   margin: 4rem auto;
+}
+
+.zahlen-name{
+    font-weight: 400;
+    text-align: center;
+    color: rgb(33,49,77);
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: "Open Sans Regular",Arial,Helvetica,sans-serif;
+}
+
+.zahlen-nummer{
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(33,49,77);
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Open Sans Regular",Arial,Helvetica,sans-serif;
+}
+
+.price-content-1 span{
+    display: block;
+    text-align: center;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.arbeiter-zahlen{
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    max-width: 100%;
+}
+
+.aktie{
+    width: 490px;
+    height: auto;
+}
+.mitarbeiter{
+    width: 490px;
+} */

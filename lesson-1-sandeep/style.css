@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #a3dda3;
+}
+
+.header{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo{
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.logo span{
+    color: crimson;
+}
+
+.video-section{
+    margin: 3rem 0 0 2rem;
+    width: 1000px;
+}
+
+.video-description p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: crimson;
+    font-size: 1rem;
+}
+
+.buttons{
+    margin-top: 2rem;
+}
+
+button{
+    margin-left: 10px;
+}
+
+#video-btn{
+    color: red;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    border: none;
+}
+
+#video-btn:hover{
+    color: white;
+    background-color: #ff7200;
+}
+
+#image-btn{
+    color: green;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    border: none;
+}
+
+#image-btn:hover{
+    color: red;
+    background-color: #ff7200;
+}
+
+.video-image{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.video-image .video{
+    width: 100%;
+}
+.image{
+    background-color: white;
+    width: 100%;
+    height: auto;
+}
+
+
+
+.image img{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    display: block;
+} 
+
+
+#allimages-btn{
+    color: green;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    border: none;
+}
+
+.all-images{
+    background-color: skyblue;
+    width: 100%;
+    height: 600px;
+    margin-bottom: 2rem;
+    position: relative;
+    
+}
+
+.all-images .image-1{
+    margin: 10px;
+    border: 2px solid white;
+}
+
+.all-images .image-2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    border: 2px solid white;
+}
+
+.all-images .image-3{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+    border: 2px solid white;
+}
+
+.all-images .image-4{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    border: 2px solid white;
+}
+
+.all-images .image-5{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    border: 2px solid white;
+}
+
+
+.all-images img{
+    width: 200px;
+    height: 200px;
+}
+
+@media screen and (min-width:480px){
+  .header{
+      width: 1200px;
+  }
+}
