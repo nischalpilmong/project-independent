@@ -5,15 +5,33 @@
     font-family: "Open Sans Regular", Arial, Helvetica, sans-serif;
 }
 
-
-.chrome .main-body{
+.main-body{
     width: 100%;
     height: auto;
     background-color: rgb(33, 49, 77);
 }
 
+/* .chrome .main-body{
+    width: 100%;
+    height: auto;
+    background-color: rgb(33, 49, 77);
+/* } 
+
 .Firefox .main-body{
     background-color: #2ecc71;
+} */
+
+
+/* header section */
+
+.hero-wrap{
+    width: 100%;
+    padding-top: 180%;
+    background-image: url('./img/freenet-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 
 .freenet-zahlen{
