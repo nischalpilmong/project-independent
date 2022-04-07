@@ -75,7 +75,7 @@
 
 
 .freenet-zahlen{
-    height: 230px;
+    min-height: 230px;
     background-color: rgb(227, 232, 243);
     clip-path: polygon(0 0, 100% 0, 100% 180px, 0 100%);
 }
