@@ -90,13 +90,71 @@
 
 .leitbild h2{
     margin-bottom: 22px;
+    color: rgb(33, 49, 77);
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 800;
 }
 .kunden-zentriert{
   background-color: rgb(210, 223, 233);
+  height: 370px;
   position: relative;
 }
 
+.nah{
+    background-color: rgb(201, 233, 223);
+    height: 370px;
+    position: relative;
+}
+
+.digital-first{
+    background-color: rgb(251, 207, 227);
+    height: 370px;
+    position: relative;
+}
+
+.bedarfs-orientiert{
+    background-color: rgb(244, 230, 194);
+    height: 370px;
+    position: relative;
+}
+.leitbild-types{
+    display: flex;
+    flex-direction: column;
+}
+
+.leitbild-types .leitbild-icons{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: -20px;
+    right: 0;
+}
+
+.leitbild-types .pillersName{
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    font-size: 26px;
+    color: rgb(33, 49, 77);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.leitbild-types .pillersContent{
+    position: absolute;
+    top: 175px;
+    left: 53px;
+    right: 27px;
+   font-size: 16px;
+   font-weight: 400;
+   color: rgb(33, 49, 77);
+   letter-spacing: 0.8px;
+   line-height: 26px;
+}
 /*Leitbild section ends here*/
+
+
 .freenet-zahlen{
     min-height: 230px;
     background-color: rgb(227, 232, 243);
