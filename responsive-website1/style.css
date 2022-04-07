@@ -94,7 +94,7 @@
     }
 
     .logo{
-        flex: 2 0 auto;
+        flex: 0 0 auto;
     }
     .nav-menu{
         flex: 2 0 auto;
@@ -117,10 +117,28 @@
         font-weight: 400;
         padding: 0 20px;
         text-transform: uppercase;
+         position: relative;
     }
     
+    .unternehmen-list{
+        position: relative;
+    }
+    .unternehmen-submenu{
+        position: absolute;
+        top: 24px;
+        left: 0;
+        display: none;
+    }
+
+    .unternehmen-list:hover .unternehmen-submenu{
+          display: flex;
+          flex-wrap: nowrap;
+          align-items: center;
+          justify-content: flex-start;
+    }
     .nav-menu li a:hover{
         text-decoration: underline;
+        cursor: pointer;
     }
     .sprache{
         display: block;
