@@ -77,7 +77,11 @@
 /*header section ends here*/
 
 
-
+/*Leitbild section */
+.leitbild{
+    padding: 25px 0px 40px 16px;
+}
+/*Leitbild section ends here*/
 .freenet-zahlen{
     min-height: 230px;
     background-color: rgb(227, 232, 243);
