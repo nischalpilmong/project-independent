@@ -5,9 +5,13 @@
     font-family: "Open Sans Regular", Arial, Helvetica, sans-serif;
 }
 
-.main-body{
+.main-wrapper{
     width: 100%;
     height: auto;
+    position: relative;
+}
+
+.main-body{   
     background-color: rgb(33, 49, 77);
 }
 
@@ -29,7 +33,7 @@
     padding-top: 180%;
     background-image: url('./img/background.jpg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-size: cover;
     position: relative;
     z-index: 0;
