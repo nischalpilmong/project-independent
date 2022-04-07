@@ -92,6 +92,13 @@
     .hamburger{
        display: none;
     }
+
+    .logo{
+        flex: 2 0 auto;
+    }
+    .nav-menu{
+        flex: 2 0 auto;
+    }
     .navbar{
         padding: 40px 15px 40px 40px;
     }
