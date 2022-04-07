@@ -31,7 +31,7 @@
 .hero-wrap{
     width: 100%;
     padding-top: 180%;
-    background-image: url('./img/freenet-background.jpg');
+    background-image: url('./img/background.jpg');
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -79,7 +79,7 @@
 
 
 .freenet-zahlen{
-    height: 230px;
+    min-height: 230px;
     background-color: rgb(227, 232, 243);
     clip-path: polygon(0 0, 100% 0, 100% 180px, 0 100%);
 }
