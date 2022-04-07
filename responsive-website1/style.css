@@ -53,7 +53,7 @@
     min-height: 80px;
     width: 100%;
     top: 0;
-  left: 25px;
+  left: 0;
   z-index: 10;
   display: flex;
   align-items: center;
@@ -63,6 +63,12 @@
 .navbar a img{
     width: 177px;
     height: auto;
+    margin-right: 70px;
+}
+
+.hamburger{
+   position: absolute;
+   right: 20px;
 }
 
 .hamburger .bar{
@@ -81,6 +87,15 @@
 .leitbild{
     padding: 25px 0px 40px 16px;
 }
+
+.leitbild h2{
+    margin-bottom: 22px;
+}
+.kunden-zentriert{
+  background-color: rgb(210, 223, 233);
+  position: relative;
+}
+
 /*Leitbild section ends here*/
 .freenet-zahlen{
     min-height: 230px;
