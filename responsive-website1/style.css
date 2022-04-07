@@ -62,8 +62,11 @@
 
 .navbar a img{
     width: 177px;
-    height: auto;
     margin-right: 70px;
+}
+
+.nav-menu{
+    display: none;
 }
 
 .hamburger{
@@ -80,8 +83,52 @@
     transition: all 0.3s ease-in-out;
 }
 
-@media screen and (min-width:1170px){
-    
+
+.sprache{
+    display: none;
+}
+
+@media screen and (min-width:1170px) {
+    .hamburger{
+       display: none;
+    }
+    .navbar{
+        padding: 40px 15px 40px 40px;
+    }
+    .navbar .nav-menu{
+        display: block;
+    }
+
+    .nav-menu li{
+        display: inline-block;
+        list-style: none;
+    }
+    .nav-menu li a{
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 0 20px;
+    }
+
+    .sprache{
+        display: block;
+    }
+
+    .sprache li{
+        display: inline-block;
+    }
+    .sprache li:first-child{
+        color: rgb(132, 188, 52);
+        padding-right: 16px;
+        border-right: 1px solid white;
+    }
+    .sprache li:nth-child(2){
+        margin-right: 2px;
+        padding-left: 10px;
+        padding-right: 8px;
+        color: white;
+    }
 }
 /*header section ends here*/
 
