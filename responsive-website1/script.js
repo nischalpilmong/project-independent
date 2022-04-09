@@ -34,3 +34,14 @@
 // } else if(navigator.userAgent.indexOf("Mac") != -1){
 //     document.body.classList.add('Mac');
 // }    
+
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+const subMenu = document.querySelector('.unternehmen-submenu');
+
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    // navMenu.style.display = 'block';
+    // subMenu.style.display = 'none';
+});
