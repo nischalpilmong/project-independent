@@ -125,24 +125,24 @@
     }
     .unternehmen-submenu{
         position: absolute;
-        width: 100%;
-        left: -52%;
-        padding-top: 20px;
+        width: 1000px;
+        left: -100%;
+        padding-top: 45px;
         display: none;
     }
 
     .unternehmen-list:hover .unternehmen-submenu,
     .unternehmen-list:focus .unternehmen-submenu{
-          display: flex;
+          display: inline-block;
           flex-wrap: nowrap;
           align-items: center;
           justify-content: flex-start;
           transition: .4s ease .25s;
-         
     }
     
-    .unternehmen-submenu li a{
-        padding: 10px;
+    .unternehmen-submenu li{
+        flex: 1 0 auto;
+        padding-bottom: 20px;
     }
     .nav-menu li a:hover{
         text-decoration: underline;
