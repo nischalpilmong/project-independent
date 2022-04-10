@@ -152,23 +152,29 @@
     text-transform: capitalize;
 }
 
-.unternehmen-submenu.activeSubmenu .backbtn{
-
-}
-
-
 
 .sprache{
     display: none;
 }
 
-@media (min-width:1280px) {
+@media(max-width:992px){
+      .navbar{
+          justify-content: flex-start;
+      }
+      .navbar .logo{
+          margin-left: 30px;
+      }
+}
+
+
+@media(min-width:994px) {
     .hamburger{
        display: none;
     }
 
     .logo{
         flex: 0 0 auto;
+        margin-left: 10px;
     }
     .nav-menu{
         flex: 2 0 auto;
@@ -280,8 +286,8 @@
     position: relative;
 }
 .leitbild-types{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
 }
 
 .leitbild-types .leitbild-icons{
@@ -487,6 +493,16 @@ section .freenet-heading{
         text-align: center;
         padding: 5px;
     }
+    .leitbild-types{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+    .kunden-zentriert,
+    .digital-first,
+    .bedarfs-orientiert,
+    .nah{
+        height: 395px;
+    }
 }
 
 
@@ -512,75 +528,18 @@ section .freenet-heading{
     .ergebnisse .ergebnisse-btn{
         font-size: 13px; 
     }
+    .leitbild-types{
+       grid-template-columns: repeat(4, 1fr);
+    }
+    .leitbild-types .leitbild-icons{
+        width: 85px;
+        top: -40px;
+    }
+    .leitbild-types .pillersName{
+        font-size: 20px;
+    }
+    .leitbild-types .pillersContent{
+        top: 125px;
+        left: 40px;
+    }
 }
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-.grid-container{
-    background-color: rgb(33,49,77);
-    height: 60vh;
-    width: 1100px;
-    max-width: 100%;
-    margin: 10px auto;
-}
-
-.freenet-zahlen{
-    background-color: rgb(227, 232, 243);
-    height: 40vh;
-    clip-path: polygon(0 0, 100% 0, 100% 180px, 0 75%);
-}
-
-.price-content-1{
-    display: flex;
-    width: 100%;
-    height: 40vh;
-}
-
-.umsatz-price, .abonnent-price, .ebitda-price, .free-cashflow{
-   margin: 4rem auto;
-}
-
-.zahlen-name{
-    font-weight: 400;
-    text-align: center;
-    color: rgb(33,49,77);
-    text-transform: uppercase;
-    font-size: 24px;
-    font-family: "Open Sans Regular",Arial,Helvetica,sans-serif;
-}
-
-.zahlen-nummer{
-    font-weight: 700;
-    text-transform: uppercase;
-    color: rgb(33,49,77);
-    margin-top: 0.5rem;
-    text-align: center;
-    font-size: 40px;
-    font-family: "Open Sans Regular",Arial,Helvetica,sans-serif;
-}
-
-.price-content-1 span{
-    display: block;
-    text-align: center;
-    line-height: 24px;
-    font-size: 16px;
-}
-
-.arbeiter-zahlen{
-    display: flex;
-    flex-direction: row;
-    width: 1000px;
-    max-width: 100%;
-}
-
-.aktie{
-    width: 490px;
-    height: auto;
-}
-.mitarbeiter{
-    width: 490px;
-} */
