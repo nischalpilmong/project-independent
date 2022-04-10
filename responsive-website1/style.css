@@ -72,6 +72,7 @@
 .hamburger{
    position: absolute;
    right: 20px;
+   cursor: pointer;
 }
 
 .hamburger .bar{
