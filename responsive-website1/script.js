@@ -43,6 +43,7 @@ const subMenu = document.querySelector('.unternehmen-submenu');
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
+    subMenu.style.display = "none";
     // navMenu.style.display = 'block';
     // subMenu.style.display = 'none';
 });
