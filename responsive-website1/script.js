@@ -38,12 +38,23 @@
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 const subMenu = document.querySelector('.unternehmen-submenu');
-
+const unternehmenLink = document.querySelector('.unternehmen-link');
+const backbtn = document.querySelector('.backbtn');
 
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     navMenu.classList.toggle('active');
-    subMenu.style.display = "none";
+    subMenu.style.display = 'none';
     // navMenu.style.display = 'block';
     // subMenu.style.display = 'none';
 });
+
+unternehmenLink.addEventListener('click', () => {
+    subMenu.classList.add('activeSubmenu');
+    subMenu.style.display = 'block';
+})
+
+backbtn.addEventListener('click', () => {
+    subMenu.classList.remove('activeSubmenu');
+    subMenu.style.display = 'none';
+})
